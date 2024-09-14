@@ -1,0 +1,51 @@
+@font-face {
+    font-weight: 400;
+    font-family: 'Montserrat';
+    font-style: normal;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/Monteserrat/static/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Monteserrat/static/Montserrat-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: 'Montserrat';
+    font-style: normal;
+    src: local('Montserrat Medium'), local('Montserrat-Medium'),
+        url('../fonts/Monteserrat/static/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Monteserrat/static/Montserrat-Medium.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: 'Montserrat';
+    font-style: normal;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../fonts/Montserrat/static/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat/static/Montserrat-Bold.woff') format('woff');
+    font-display: swap;
+}
+
+@supports (font-variation-settings: normal) {
+    @font-face {
+        font-weight: 500 700;
+        font-family: "Montserrat";
+        font-stretch: 50% 200%;
+        font-display: swap;
+        src: local('Montserrat Thin'), local('Montserrat-Thin'),
+             url("../fonts/Montserrat/Montserrat-Thin.woff2") format(woff2) tech(variations),
+             url("../fonts/Montserrat/Montserrat-Thin.woff2") format("woff2-variations");
+    }
+
+    @font-face {
+        font-weight: 700;
+        font-family: "Fraunces";
+        font-stretch: 50% 200%;
+        font-display: swap;
+        src: local('Fraunces 9pt Black'), local('Fraunces-9ptBlack'),
+             url("../fonts/Fraunces/Fraunces-9ptBlack.woff2") format(woff2) tech(variations),
+             url("../fonts/Fraunces/Fraunces-9ptBlack.woff2") format("woff2-variations");
+    }
+}
